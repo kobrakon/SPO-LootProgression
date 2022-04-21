@@ -4,9 +4,9 @@ class lootprogression
 {
   constructor ()
   {
-    this.mod = ModLoader.modPath["Kobrakon-LootProgression"]
-    ModLoader.onModLoad(this.mod) = this.load.bind(this)
-    HttpRouter.onStaticRoute["/client/game/start"] = Object.Assign(["Interceptor" = lootprogression.intercept], HttpRouter.onStaticRoute["/client/game/start"])
+    this.mod = ModLoader.getModPath["Kobrakon-LootProgression"]
+    ModLoader.onLoad[this.mod] = this.load.bind(this)
+    HttpRouter.onStaticRoute["/client/game/start"] = Object.Assign({"Interceptor" = lootprogression.intercept}, HttpRouter.onStaticRoute["/client/game/start"])
     HttpRouter.onStaticRoute["/client/match/join"]["Interceptor"] = lootprogression.intercept // run on raid start
     HttpRouter.onStaticRoute["/client/match/exit"]["Interceptor"] = lootprogression.intercept // run on raid end
   }
