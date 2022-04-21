@@ -6,7 +6,7 @@ class lootprogression
   {
     this.mod = ModLoader.getModPath["Kobrakon-LootProgression"]
     ModLoader.onLoad[this.mod] = this.load.bind(this)
-    HttpRouter.onStaticRoute["/client/game/start"] = Object.Assign({"Interceptor": lootprogression.intercept}, HttpRouter.onStaticRoute["/client/game/start"])
+    HttpRouter.onStaticRoute["/client/game/start"] = Object.assign({"Interceptor": lootprogression.intercept}, HttpRouter.onStaticRoute["/client/game/start"])
     HttpRouter.onStaticRoute["/client/match/join"]["Interceptor"] = lootprogression.intercept // run on raid start
     HttpRouter.onStaticRoute["/client/match/exit"]["Interceptor"] = lootprogression.intercept // run on raid end
   }
@@ -27,7 +27,7 @@ class lootprogression
       return
     }
     
-    if (pmcData.Info.Level <== 10) // if pmc level is less than or equal to 10, apply changes 
+    if (pmcData.Info.Level <= 10) // if pmc level is less than or equal to 10, apply changes 
     {
       LocationConfig.looseLootMultiplier.bigmap = 1 // customs
       LocationConfig.looseLootMultiplier.factory4_day = 1
@@ -50,7 +50,7 @@ class lootprogression
       LocationConfig.staticLootMultiplier.lighthouse = 1
     }
     
-    if (pmcData.Info.Level >== 10) // if pmc level is greater than or equal to 10, apply changes
+    if (pmcData.Info.Level >= 10) // if pmc level is greater than or equal to 10, apply changes
     {
       LocationConfig.looseLootMultiplier.bigmap = 1
       LocationConfig.looseLootMultiplier.factory4_day = 1
@@ -73,7 +73,7 @@ class lootprogression
       LocationConfig.staticLootMultiplier.lighthouse = 1
     }
     
-    if (pmcData.Info.Level >== 20) // note that 2 equals are used as 2 equals is a "comparison equality" so it compares the pmc level to the value in the if and returns either true or false
+    if (pmcData.Info.Level >= 20)
     {
       LocationConfig.looseLootMultiplier.bigmap = 1
       LocationConfig.looseLootMultiplier.factory4_day = 1
