@@ -27,75 +27,97 @@ class lootprogression
       return
     }
     
-    if (pmcData.Info.Level <= 10) // if pmc level is less than or equal to 10, apply changes 
+    if (pmcData.Info.Level <= 14) 
     {
-      LocationConfig.looseLootMultiplier.bigmap = 1 // customs
-      LocationConfig.looseLootMultiplier.factory4_day = 1
-      LocationConfig.looseLootMultiplier.factory4_night = 1
+      LocationConfig.looseLootMultiplier.bigmap = 0.4
+      LocationConfig.looseLootMultiplier.factory4_day = 0.4
+      LocationConfig.looseLootMultiplier.factory4_night = 1.2
       LocationConfig.looseLootMultiplier.interchange = 1
       LocationConfig.looseLootMultiplier.laboratory = 1
-      LocationConfig.looseLootMultiplier.rezervbase = 1 // reserve
-      LocationConfig.looseLootMultiplier.shoreline = 1
-      LocationConfig.looseLootMultiplier.woods = 1
-      LocationConfig.looseLootMultiplier.lighthouse = 1
+      LocationConfig.looseLootMultiplier.rezervbase = 1.5
+      LocationConfig.looseLootMultiplier.shoreline = 1.2
+      LocationConfig.looseLootMultiplier.woods = 0.8
+      LocationConfig.looseLootMultiplier.lighthouse = 1.5
       
-      LocationConfig.staticLootMultiplier.bigmap = 1
-      LocationConfig.staticLootMultiplier.factory4_day = 1
-      LocationConfig.staticLootMultiplier.factory4_night = 1
+      LocationConfig.staticLootMultiplier.bigmap = 0.5
+      LocationConfig.staticLootMultiplier.factory4_day = 0.5
+      LocationConfig.staticLootMultiplier.factory4_night = 1.3
       LocationConfig.staticLootMultiplier.interchange = 1
       LocationConfig.staticLootMultiplier.laboratory = 1
-      LocationConfig.staticLootMultiplier.rezervbase = 1
-      LocationConfig.staticLootMultiplier.shoreline = 1
-      LocationConfig.staticLootMultiplier.woods = 1
-      LocationConfig.staticLootMultiplier.lighthouse = 1
+      LocationConfig.staticLootMultiplier.rezervbase = 1.4
+      LocationConfig.staticLootMultiplier.shoreline = 1.2
+      LocationConfig.staticLootMultiplier.woods = 0.8
+      LocationConfig.staticLootMultiplier.lighthouse = 1.5
     }
     
-    if (pmcData.Info.Level >= 10) // if pmc level is greater than or equal to 10, apply changes
+    if (pmcData.Info.Level >= 15)
     {
-      LocationConfig.looseLootMultiplier.bigmap = 1
-      LocationConfig.looseLootMultiplier.factory4_day = 1
-      LocationConfig.looseLootMultiplier.factory4_night = 1
-      LocationConfig.looseLootMultiplier.interchange = 1
-      LocationConfig.looseLootMultiplier.laboratory = 1
-      LocationConfig.looseLootMultiplier.rezervbase = 1
-      LocationConfig.looseLootMultiplier.shoreline = 1
-      LocationConfig.looseLootMultiplier.woods = 1
-      LocationConfig.looseLootMultiplier.lighthouse = 1
+      LocationConfig.looseLootMultiplier.bigmap = 0.6
+      LocationConfig.looseLootMultiplier.factory4_day = 0.6
+      LocationConfig.looseLootMultiplier.factory4_night = 1.2
+      LocationConfig.looseLootMultiplier.interchange = 1.1
+      LocationConfig.looseLootMultiplier.laboratory = 1.2
+      LocationConfig.looseLootMultiplier.rezervbase = 1.4
+      LocationConfig.looseLootMultiplier.shoreline = 1.2
+      LocationConfig.looseLootMultiplier.woods = 0.8
+      LocationConfig.looseLootMultiplier.lighthouse = 1.4
       
-      LocationConfig.staticLootMultiplier.bigmap = 1
-      LocationConfig.staticLootMultiplier.factory4_day = 1
-      LocationConfig.staticLootMultiplier.factory4_night = 1
+      LocationConfig.staticLootMultiplier.bigmap = 0.7
+      LocationConfig.staticLootMultiplier.factory4_day = 0.7
+      LocationConfig.staticLootMultiplier.factory4_night = 1.3
       LocationConfig.staticLootMultiplier.interchange = 1
-      LocationConfig.staticLootMultiplier.laboratory = 1
-      LocationConfig.staticLootMultiplier.rezervbase = 1
-      LocationConfig.staticLootMultiplier.shoreline = 1
-      LocationConfig.staticLootMultiplier.woods = 1
-      LocationConfig.staticLootMultiplier.lighthouse = 1
+      LocationConfig.staticLootMultiplier.laboratory = 1.1
+      LocationConfig.staticLootMultiplier.rezervbase = 1.3
+      LocationConfig.staticLootMultiplier.shoreline = 1.2
+      LocationConfig.staticLootMultiplier.woods = 0.8
+      LocationConfig.staticLootMultiplier.lighthouse = 1.4
     }
     
-    if (pmcData.Info.Level >= 20)
+    if (pmcData.Info.Level >= 25) 
     {
-      LocationConfig.looseLootMultiplier.bigmap = 1
-      LocationConfig.looseLootMultiplier.factory4_day = 1
-      LocationConfig.looseLootMultiplier.factory4_night = 1
-      LocationConfig.looseLootMultiplier.interchange = 1
-      LocationConfig.looseLootMultiplier.laboratory = 1
-      LocationConfig.looseLootMultiplier.rezervbase = 1
-      LocationConfig.looseLootMultiplier.shoreline = 1
-      LocationConfig.looseLootMultiplier.woods = 1
-      LocationConfig.looseLootMultiplier.lighthouse = 1
+      LocationConfig.looseLootMultiplier.bigmap = 0.9
+      LocationConfig.looseLootMultiplier.factory4_day = 0.9
+      LocationConfig.looseLootMultiplier.factory4_night = 1.2
+      LocationConfig.looseLootMultiplier.interchange = 1.5
+      LocationConfig.looseLootMultiplier.laboratory = 1.3
+      LocationConfig.looseLootMultiplier.rezervbase = 1.3
+      LocationConfig.looseLootMultiplier.shoreline = 1.2
+      LocationConfig.looseLootMultiplier.woods = 0.8
+      LocationConfig.looseLootMultiplier.lighthouse = 1.3
       
       LocationConfig.staticLootMultiplier.bigmap = 1
       LocationConfig.staticLootMultiplier.factory4_day = 1
-      LocationConfig.staticLootMultiplier.factory4_night = 1
-      LocationConfig.staticLootMultiplier.interchange = 1
-      LocationConfig.staticLootMultiplier.laboratory = 1
-      LocationConfig.staticLootMultiplier.rezervbase = 1
-      LocationConfig.staticLootMultiplier.shoreline = 1
-      LocationConfig.staticLootMultiplier.woods = 1
-      LocationConfig.staticLootMultiplier.lighthouse = 1
+      LocationConfig.staticLootMultiplier.factory4_night = 1.3
+      LocationConfig.staticLootMultiplier.interchange = 1.3
+      LocationConfig.staticLootMultiplier.laboratory = 1.1
+      LocationConfig.staticLootMultiplier.rezervbase = 1.2
+      LocationConfig.staticLootMultiplier.shoreline = 1.2
+      LocationConfig.staticLootMultiplier.woods = 0.8
+      LocationConfig.staticLootMultiplier.lighthouse = 1.3
     }
+
+    if (pmcData.Info.Level >= 35) 
+    {
+      LocationConfig.looseLootMultiplier.bigmap = 1.1
+      LocationConfig.looseLootMultiplier.factory4_day = 1
+      LocationConfig.looseLootMultiplier.factory4_night = 1.2
+      LocationConfig.looseLootMultiplier.interchange = 1.7
+      LocationConfig.looseLootMultiplier.laboratory = 1.4
+      LocationConfig.looseLootMultiplier.rezervbase = 1.2
+      LocationConfig.looseLootMultiplier.shoreline = 1.2
+      LocationConfig.looseLootMultiplier.woods = 0.8
+      LocationConfig.looseLootMultiplier.lighthouse = 1.2
+      
+      LocationConfig.staticLootMultiplier.bigmap = 1.1
+      LocationConfig.staticLootMultiplier.factory4_day = 1.2
+      LocationConfig.staticLootMultiplier.factory4_night = 1.3
+      LocationConfig.staticLootMultiplier.interchange = 1.2
+      LocationConfig.staticLootMultiplier.laboratory = 1.1
+      LocationConfig.staticLootMultiplier.rezervbase = 1.1
+      LocationConfig.staticLootMultiplier.shoreline = 1.2
+      LocationConfig.staticLootMultiplier.woods = 0.8
+      LocationConfig.staticLootMultiplier.lighthouse = 1.2
   }
 }
-
+}
 module.exports.Mod = lootprogression;
